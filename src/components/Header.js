@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-import logo from '../images/logo.svg';
-import homeIcon from '../images/home-icon.svg';
-import searchIcon from '../images/search-icon.svg';
-import watchlistIcon from '../images/watchlist-icon.svg';
-import originalIcon from '../images/original-icon.svg';
-import movieIcon from '../images/movie-icon.svg';
-import seriesIcon from '../images/series-icon.svg';
+import logo from './images/logo.svg';
+import homeIcon from './images/home-icon.svg';
+import searchIcon from './images/search-icon.svg';
+import watchlistIcon from './images/watchlist-icon.svg';
+import originalIcon from './images/original-icon.svg';
+import movieIcon from './images/movie-icon.svg';
+import seriesIcon from './images/series-icon.svg';
 
 export default function Header() {
     return (
