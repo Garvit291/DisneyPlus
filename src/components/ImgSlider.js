@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import slider1 from './images/slider-badging.jpg';
 import slider2 from './images/slider-badag.jpg';
 
+
 function ImgSlider() {
 
     var settings = {
