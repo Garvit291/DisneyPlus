@@ -3,12 +3,14 @@ import styled from 'styled-components';
 import background from './images/home-background.png';
 import ImageSlider from './ImgSlider';
 import Viewers from './Viewers';
+import Movies from './Movies';
 
 function Home() {
     return (
         <Container>
             <ImageSlider/>
             <Viewers/>
+            <Movies/>
         </Container>
     )
 }
