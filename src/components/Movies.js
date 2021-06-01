@@ -1,42 +1,30 @@
 import React from 'react';
 import styled from 'styled-components';
 import v1 from './images/viewers-disney.png';
+import {Link} from 'react-router-dom';
+import {selectMovies} from '../features/movies/movieSlice';
+import {useSelector} from 'react-redux';
 
 function Movies() {
+    const movies = useSelector(selectMovies);
+    
+
     return (
         <Container>
             <h4>
                 Recommended for you
             </h4>
             <Content>
-                <Wrap>
-                    <img src={v1} />
-                </Wrap>
-                <Wrap>
-                    <img src={v1} />
-                </Wrap>
-                <Wrap>
-                    <img src={v1} />
-                </Wrap>
-                <Wrap>
-                    <img src={v1} />
-                </Wrap>
-                <Wrap>
-                    <img src={v1} />
-                </Wrap>
-                <Wrap>
-                    <img src={v1} />
-                </Wrap>
-                <Wrap>
-                    <img src={v1} />
-                </Wrap>
-                <Wrap>
-                    <img src={v1} />
-                </Wrap>
-            </Content>
-            <h4>
-                Recommended for you
-            </h4>
+                { movies && 
+                 movies.map((movie)=>(
+                    <Wrap key ={movie.id}>
+                        <Link to={`/detail/${movie.id}`}>
+                            <img src={movie.cardImg} />
+                        </Link>
+                    </Wrap>
+                 ))
+                }
+                </Content>
         </Container>
     )
 }
@@ -44,12 +32,14 @@ function Movies() {
 export default Movies
 
 const Container = styled.div`
+margin-bottom:20px;
 
 `
 const Content = styled.div`
     display:grid;
     grid-gap:25px;
     grid-template-columns: repeat(4,minmax(0,1fr));
+    margin-bottom:20px;
 `
 const Wrap = styled.div`
     
