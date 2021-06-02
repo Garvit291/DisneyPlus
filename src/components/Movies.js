@@ -40,6 +40,18 @@ const Content = styled.div`
     grid-gap:25px;
     grid-template-columns: repeat(4,minmax(0,1fr));
     margin-bottom:20px;
+
+    @media (max-width: 680px){
+        grid-gap:20px;
+        grid-template-columns: repeat(2,minmax(0,1fr));
+        margin-bottom:18px;
+    }
+
+    @media (max-width: 420px){
+        grid-gap:15px;
+        grid-template-columns: repeat(1,minmax(0,1fr));
+        margin-bottom:12px;
+    }
 `
 const Wrap = styled.div`
     
