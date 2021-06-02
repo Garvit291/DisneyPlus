@@ -297,7 +297,7 @@ const LoginButton = styled.div`
     }
 
     @media (max-width: 500px){
-        padding :4px 10px;
+        padding :4px 8px;
         border-radius:3px;
         letter-spacing:.5px;
         height:28px;

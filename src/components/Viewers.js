@@ -41,7 +41,7 @@ const Container = styled.div`
     @media (max-width: 680px){
         margin-top:15px;
         padding:15px 0 20px;
-        grid-template-columns:repeat(4,minmax(0,1fr));
+        grid-template-columns:repeat(2,minmax(0,1fr));
         grid-gap:20px;
 
         
