@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React ,{useEffect} from 'react';
 import styled from 'styled-components';
 import logo from './images/logo.svg';
@@ -8,7 +9,6 @@ import watchlistIcon from './images/watchlist-icon.svg';
 import originalIcon from './images/original-icon.svg';
 import movieIcon from './images/movie-icon.svg';
 import seriesIcon from './images/series-icon.svg';
-import out from './images/out.png';
 import {selectUserName , selectUserPhoto,setUserLogin,setSignOut} from '../features/user/userSlice';
 import {useSelector,useDispatch} from "react-redux";
 import {useHistory} from 'react-router-dom';
@@ -77,32 +77,32 @@ export default function Header() {
                     <>
                     <NavMenu>
                     <a>
-                        <img src={homeIcon}/>
+                        <img src={homeIcon} alt={"home"}/>
                         <span>HOME</span>  
                     </a>
                     <a>
-                        <img src={searchIcon}/>
+                        <img src={searchIcon}  alt={"search"}/>
                         <span>SEARCH</span>  
                     </a>
                     <a>
-                        <img src={watchlistIcon}/>
+                        <img src={watchlistIcon} alt ={"watchlist"}/>
                         <span>WATCHLIST</span>  
                     </a>
                     <a>
-                        <img src={originalIcon}/>
+                        <img src={originalIcon} alt={"originals"}/>
                         <span>ORIGINAL</span>  
                     </a>
                     <a>
-                        <img src={movieIcon}/>
+                        <img src={movieIcon} alt={"movies"}/>
                         <span>MOVIE</span>  
                     </a>
                     <a>
-                        <img src={seriesIcon}/>
+                        <img src={seriesIcon} alt={"series"}/>
                         <span>SERIES</span>  
                     </a>
                     
                 </NavMenu>
-                <UserImg src={userPhoto} onClick={signOut}/>
+                <UserImg src={userPhoto} onClick={signOut} alt={"userPhoto"}/>
                 
 
                
@@ -312,10 +312,3 @@ const LoginContainer = styled.div`
     justify-content:flex-end;
 `
 
-const Signout = styled.img`
-    width:48px;
-    height:48px;
-    margin-left:10px;
-    background-color:white;
-    
-`

@@ -5,7 +5,7 @@ import trailer from './images/play-icon-white.png' ;
 import group from './images/group-icon.png' ;
 import {useParams} from 'react-router-dom';
 import db from '../firebase';
-import { setMovies } from '../features/movies/movieSlice';
+
 
 
 
@@ -28,7 +28,7 @@ function Detail() {
             }
         })
         
-    }, [])
+    }, [id])
     
     return (
         <Container>
@@ -36,25 +36,25 @@ function Detail() {
                movie && (
                    <>
                         <Background>
-                            <img src={movie.backgroundImg}/>
+                            <img src={movie.backgroundImg} alt={"detaill bg"}/>
                         </Background>
                         <ImageTitle>
-                            <img src={movie.titleImg} />
+                            <img src={movie.titleImg} alt={"title img"} />
                         </ImageTitle>
                         <Controls>
                             <PlayButton>
-                                    <img src={play}/>
+                                    <img src={play} alt={"playButton"}/>
                                     <span>PLAY</span>
                             </PlayButton>
                             <TrailerButton>
-                                    <img src={trailer}/>
+                                    <img src={trailer} alt={"trailerButton"}/>
                                     <span>TRAILER</span>
                             </TrailerButton>
                             <AddButton>
                                     <span>+</span>
                             </AddButton>
                             <GroupWatchButton>
-                                    <img src={group}/>
+                                    <img src={group} alt={"groupicon"}/>
                             </GroupWatchButton>
                         </Controls>
                             

@@ -11,19 +11,19 @@ function Viewers() {
     return (
         <Container>
             <Wrap>
-                <img src={v1}/>
+                <img src={v1} alt = {"viewerlogo"}/>
             </Wrap>
             <Wrap>
-                <img src={v2}/>
+                <img src={v2} alt = {"viewerlogo"} />
             </Wrap>
             <Wrap>
-                <img src={v3}/>
+                <img src={v3} alt = {"viewerlogo"}/>
             </Wrap>
             <Wrap>
-                <img src={v4}/>
+                <img src={v4} alt = {"viewerlogo"}/>
             </Wrap>
             <Wrap className="spec">
-                <img src={v5}/>
+                <img src={v5} alt = {"viewerlogo"}/>
             </Wrap>
         </Container>
     )

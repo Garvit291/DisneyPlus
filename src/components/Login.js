@@ -8,7 +8,7 @@ function Login() {
     return (
         <Container>
             <CTA>
-                <CtaLogoOne src = {Cta1}/>
+                <CtaLogoOne src = {Cta1} alt={"cta1"}/>
                 <SignUp>
                     GET ALL THERE
                 </SignUp>
@@ -17,7 +17,7 @@ function Login() {
                 This is  the DescriptionThis is  the DescriptionThis is  the DescriptionThis is  the DescriptionThis is  the DescriptionThis is  the Descriptio
                 This is  the Description
                 </Description>
-                <CtaLogoTwo src={cta2}/>
+                <CtaLogoTwo src={cta2} alt={"cta2"} />
             </CTA>
         </Container>
     )

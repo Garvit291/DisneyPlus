@@ -6,7 +6,6 @@ import "slick-carousel/slick/slick-theme.css";
 import slider1 from './images/slider-badging.jpg';
 import slider2 from './images/slider-badag.jpg';
 
-
 function ImgSlider() {
 
     var settings = {
@@ -22,10 +21,10 @@ function ImgSlider() {
     return (
         <Carousel {...settings}>
             <Wrap>
-                <img src={slider1}/>
+                <img src={slider1} alt={"slider1img"}/>
             </Wrap>
             <Wrap>
-                <img src={slider2}/>
+                <img src={slider2} alt={"slider2img"}/>
             </Wrap>
         </Carousel>
     )
